@@ -1,0 +1,23 @@
+.video-container {
+    position: relative;
+    video {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+.video-btn {
+    font-size: 0;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    top: 162px;
+    left: 50%;
+    transform: translateX(-38px);
+    cursor: pointer;
+    background: url(../img/PlayIcon.png) center center no-repeat, linear-gradient(to right, $orange, $rose);
+}
+

@@ -1,0 +1,71 @@
+.download-section {
+    padding-top: 113px;
+    padding-bottom: 120px;
+    background: linear-gradient(to right, $orange, $rose);
+
+    @include phones {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.download__title {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 85px;
+    text-align: center;
+
+    @include phones {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.download__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.download__item {
+    width: 32%;
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.download__link {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 30px 50px 30px 110px;
+
+    span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: $gray;
+    }
+
+    &--apple {
+        background: url(../img/MacIcon.png) 25px 29px no-repeat, #ffffff;
+    }
+
+    &--android {
+        background: url(../img/AndroidIcon.png) 25px 29px no-repeat, #ffffff;
+    }
+
+    &--windows {
+        background: url(../img/WindowsIcon.png) 25px 29px no-repeat, #ffffff;
+    }
+
+
+}
+

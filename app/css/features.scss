@@ -1,0 +1,95 @@
+.features-section > div {
+    border-bottom: 2px solid #eeeeee;
+}
+
+
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    @include phones {
+        padding-top: 50px;
+
+    }
+}
+
+.features__item {
+    width: 260px;
+    margin-left: 116px;
+    margin-bottom: 58px;
+    position: relative;
+
+    @include phones {
+        width: 80%;
+        margin-bottom: 30px;
+        margin-left: 70px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        top: 20%;
+        left: -95px;
+        border-radius: 50%;
+        border: 1px solid #efefef;
+
+        @include phones {
+            width: 45px;
+            height: 45px; 
+            left: -65px;  
+        }
+    }
+
+    &:first-child {
+        &::before {
+            background: url(../img/icon-1.png) center center no-repeat;
+        }
+    }
+    &:nth-child(2) {
+        &::before {
+            background: url(../img/icon-3.png) center center no-repeat;
+        }
+    }
+    &:nth-child(3) {
+        &::before {
+            background: url(../img/icon-5.png) center center no-repeat;
+        }
+    }
+    &:nth-child(4) {
+        &::before {
+            background: url(../img/icon-2.png) center center no-repeat;
+        }
+    }
+    &:nth-child(5) {
+        &::before {
+            background: url(../img/icon-4.png) center center no-repeat;
+        }
+    }
+    &:last-child {
+        &::before {
+            background: url(../img/icon-6.png) center center no-repeat;
+        }
+    }
+}
+
+.features-item__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+    @include phones {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+}
+
+.features-item__text {
+    color: $gray;
+}
+
+
+

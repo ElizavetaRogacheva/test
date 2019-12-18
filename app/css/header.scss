@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.main-header__section {
+    width: 100%;
+    color: #ffffff;
+    background: url(../img/Mockups.png) no-repeat 100% 100%, linear-gradient(to right, $orange, $rose);
+
+    @include phones {
+        background: url(../img/Mockups.png) 100% 100% / 70%  no-repeat, linear-gradient(to right, $orange, $rose);
+    }
+
+}
+
+.main-container {
+    width: 1140px;
+    margin: 0 auto;
+
+    @include phones {
+        width: 90%;
+    }
+}
+
+.main-logo {
+    @include phones {
+        width: 80px;
+        height: 25px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.main-header__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 147px;
+
+    @include phones {
+        margin-bottom: 50px;
+    }
+}
+
+.main-nav {
+    @include phones {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 20;
+
+    }
+}
+
+.main-nav__list {
+    display: flex;
+
+    @include phones {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        color: $gray;
+    }
+}
+
+.main-nav__item {
+    @include phones {
+        margin-bottom: 30px;
+    }
+}
+
+.main-nav__link {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 50px;
+    color: #ffffff;
+
+    @include phones {
+        color: $gray;
+        margin-right: 0;
+    }
+
+
+    &--download {
+        color: #000000;
+        margin-right: 0;
+        background-color: #fff;
+        padding: 8px 30px;
+        border-radius: 17px;
+        font-weight: bold;
+
+        @include phones {
+            background: linear-gradient(to right, $orange, $rose);
+        }
+    }
+}
+
+.main-header__bottom-wrapper {
+    width: 488px;
+    padding-bottom: 214px;
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.main-header__title {
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+    @include phones {
+        font-size: 27px;
+        line-height: 30px;
+
+    }
+}
+
+.main-header__description {
+    margin-bottom: 20px;
+
+}
+
+.main-header__item {
+    margin-left: 35px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @include phones {
+        margin-bottom: 10px;
+    }
+
+    &:last-child {
+        margin-bottom: 30px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 4px;
+        left: -35px;
+        background-image: url(../img/check.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.main-header__link {
+    color: #000000;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 23px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 5px solid #e25c30;
+}
+
+.menu {
+    display: none;
+
+     @include phones {
+         display: block;
+     }
+}
+
+.vision {
+    display: block;
+}

@@ -1,0 +1,10 @@
+$desktop: 1200px;
+$tablets: 800px;
+$phones: 320px;
+
+
+@mixin phones {
+    @media (max-width: $tablets) {
+      @content;
+    }
+}

@@ -1,0 +1,110 @@
+.screenshots-section {
+    padding-top: 150px;
+
+    @include phones {
+        padding-top: 30px;
+    }
+}
+
+.screenshots__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include phones {
+        font-size: 20px;
+    }
+}
+
+.screenshots__description {
+    color: $gray;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.screenshots-carousel {
+    position: relative;
+    min-height: 590px; 
+
+    @include phones {
+        min-height: 330px; 
+    }
+}
+
+.screenshots-carousel__list {
+    display: flex;
+    align-items: center;
+    min-height: 590px;
+    overflow: hidden;
+
+    @include phones {
+        min-height: 330px; 
+    }
+
+}
+
+.screenshots-carousel__item {
+    img {
+        width: 32%;
+        height: 500px;
+        box-shadow: 2px 5px 30px #d6d2d2;
+
+        @include phones {
+            width: 200px;
+            height: 290px;
+            box-shadow: 2px 5px 20px #d6d2d2;
+        }
+    }
+}
+
+.carousel__btn {
+    position: absolute;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d9dcde;
+    cursor: pointer;
+    outline: none;
+
+    &--prev {
+        background: url(../img/arrow-left.png) center center no-repeat;
+        top: 35%;
+        left: -47px;
+
+        @include phones {
+            left: 30px;
+            top: 110%;
+        }
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+    &--next {
+        background: url(../img/arrow-left.png) center center no-repeat;
+        transform: rotate(180deg);
+        top: 35%;
+        right: -47px;
+
+        @include phones {
+            right: 30px;
+            top: 110%;
+        }
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    &:hover {
+        background: url(../img/arrow-right.png) center center no-repeat, linear-gradient(to right, $orange, $rose);
+    }
+}

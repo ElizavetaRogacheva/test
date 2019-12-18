@@ -1,0 +1,61 @@
+.confidence-section > div {
+    padding-top: 176px;
+    background: url(../img/Mockupss.png) 0 50% no-repeat;
+
+    @include phones {
+        padding-top: 50px;
+        background: none;
+    }
+}
+
+.confidence__wrapper {
+    padding-left: 50%;
+    padding-bottom: 122px;
+
+    @include phones {
+        padding-left: 0;
+        border-bottom: 2px solid #eeeeee;
+        padding-bottom: 30px;
+
+    }
+}
+
+.confidence__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+
+    @include phones {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.confidence__description {
+    color: $gray;
+    &--top{
+        margin-bottom: 80px;
+
+        @include phones {
+            margin-bottom: 20px; 
+        }
+    }
+    &--bottom {
+        margin-bottom: 30px;
+    }
+}
+
+.confidence__item {
+    color: $gray;
+    margin-bottom: 20px;
+    margin-left: 33px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: -33px;
+        top: 4px;
+        background: url(../img/check-black.png) no-repeat;
+    }
+}
